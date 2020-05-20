@@ -3,9 +3,14 @@
 		<title>Allan Tanigovski's Diary</title>
 	</head>
 	<body>
+	{% for post in posts %}
 		<div>
-			<h1>TITLE</h1>
-			<p>HEY HEY HEY</p>
+			<br \>
+			<p>Publié: {{ post.published_date }}</p>
+			<h1>{{ post.title }}</h1>
+			<p>{{ post.text|linebreaksbr }}</p>
+			<br \>
 		</div>
+	{% endfor %}
 	</body>
 </html>
