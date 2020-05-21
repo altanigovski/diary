@@ -1,16 +1,19 @@
-<html>
-	<head>
-		<title>Allan Tanigovski's Diary</title>
-	</head>
-	<body>
-	{% for post in posts %}
-		<div>
-			<br \>
-			<p>Publié: {{ post.published_date }}</p>
-			<h1>{{ post.title }}</h1>
-			<p>{{ post.text|linebreaksbr }}</p>
-			<br \>
-		</div>
-	{% endfor %}
-	</body>
-</html>
+{% extends 'blog/base.html' %}
+
+{% block content %}
+	<div class="fade-in row">
+		{% for post in posts %}		
+			<div class="col-md-4">
+				<div class="post">
+					<br \>
+					<p>published: {{ post.published_date }}</p>
+					<h2><a href="{% url 'post_detail' pk=post.pk %}">#  \
+						{{ post.title }}</a></h2>
+					<p>{{ post.text|linebreaksbr }}</p>
+					<br \>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+
+{% endblock content %}

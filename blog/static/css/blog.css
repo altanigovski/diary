@@ -1,0 +1,119 @@
+/*
+ * CSS TABLE OF CONTENTS
+ *
+ * 1.0 - Header
+ * 2.0 - Body
+ * 3.0 - Footer 
+ */
+
+
+/*** 1.0 - Header ***/
+
+.page-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, 
+	.page-header h1 a:active{
+	color: #000000;
+	font-family: 'Times New Roman';
+	font-size: 1.2em;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.page-header ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.page-header li {
+	list-style: none;
+	padding-right: 2em;
+}
+
+
+/*** 2.0 - Body ***/
+
+body {
+	font-family: 'Courier New';
+	font-size: 12px;
+}
+
+h2 {
+	font-size: 1.1em;
+	text-decoration: underline;
+}
+
+.post{
+	padding: 0em 1.2em; 
+	margin-bottom: 3em;
+	border-top: 2px dotted #000000;	
+}
+
+.date {
+	float: right;
+}
+
+@media (min-width: 768px) {
+	.container {
+		margin-top: 1em;
+		max-width: 80vw;
+}
+
+.fade-in {
+	   -webkit-animation: fadein 1.3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.3s; /* Firefox < 16 */
+        -ms-animation: fadein 1.3s; /* Internet Explorer */
+         -o-animation: fadein 1.3s; /* Opera < 12.1 */
+            animation: fadein 1.3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/*** 3.0 - Footer ***/
+
+footer {
+	border-top: 2px dotted #000000;	
+	text-align: center;
+}
+
+.red-dot {
+	height: .3em;
+	width: .3em;
+	background-color: #f20000;
+	border-radius: 50%;
+	display: inline-block;
+}
+
