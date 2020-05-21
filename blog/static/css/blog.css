@@ -34,6 +34,10 @@
 	.page-header li a:active {
 	list-style: none;
 	color: #000000;
+	font-family: 'Times New Roman';
+}
+
+.page-header li {
 	padding-right: 2em;
 }
 
@@ -51,6 +55,7 @@ body {
 	font-size: 1.1em;
 	text-decoration: none;
 	text-decoration: underline;
+	font-family: 'Times New Roman';
 }
 
 .post{
