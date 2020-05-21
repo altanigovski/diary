@@ -16,7 +16,7 @@
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, 
-	.page-header h1 a:active{
+	.page-header h1 a:active {
 	color: #000000;
 	font-family: 'Times New Roman';
 	font-size: 1.2em;
@@ -30,8 +30,10 @@
 	flex-wrap: wrap;
 }
 
-.page-header li {
+.page-header li, .page-header li a, .page-header li a:visited, 
+	.page-header li a:active {
 	list-style: none;
+	color: #000000;
 	padding-right: 2em;
 }
 
@@ -43,8 +45,11 @@ body {
 	font-size: 12px;
 }
 
-h2 {
+.post h2, .post h2 a, .post h2 a:visited, 
+	.post h2 a:active {
+	color: #000000;
 	font-size: 1.1em;
+	text-decoration: none;
 	text-decoration: underline;
 }
 
